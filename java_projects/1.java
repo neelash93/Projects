@@ -1,1 +1,0 @@
-I am a ham and some people call me sam. (I am a baked turkey not hum)
