@@ -68,12 +68,12 @@ public class FrequencyStorage {
 
 		int oldFreq = node.freq;
 		if (oldFreq < newFreq) {
-			System.out.println("Increase frequency to" + newFreq + ".");
+			System.out.println("Increase frequency from " + oldFreq + " to " + newFreq + ".");
 			increaseFreq(node, newFreq);
 		} else if (oldFreq == newFreq) {
 			return;
 		} else {
-			System.out.println("Decrease frequency to" + newFreq + ".");
+			System.out.println("Decrease frequency to " + newFreq + ".");
 			decreaseFreq(node, newFreq);
 		}
 	}

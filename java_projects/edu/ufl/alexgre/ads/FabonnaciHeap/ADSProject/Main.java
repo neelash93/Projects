@@ -39,7 +39,7 @@ public class Main {
 //		}
 //		//create input file and output file
 //		String inputFilePath = args[0];
-		String inputFilePath = "test.txt";
+		String inputFilePath = "testProj.txt";
 		
 		File input_file = new File(inputFilePath);
 		String outPath;
@@ -108,6 +108,7 @@ public class Main {
 					if(HashtagFreqTable.containsKey(key)){
 						HashtagFreq old = HashtagFreqTable.get(key);
 						int newFreq = old.getFreq() + freq;
+						System.out.print("At tag: " + key + " ");
 						freqSt.changeFreq(old, newFreq);
 					}else{
 						HashtagFreq hashtagFreq = freqSt.getHashtagFreqInstance(freq);
